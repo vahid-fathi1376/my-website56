@@ -1,0 +1,176 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --lg:linear-gradient(rgba(248,17,17,0.5),rgba(90,9,9,0.5));
+    --rgb:rgb(238,129,129);
+    --red:#ff751a;
+    --blue:#66b3ff;
+    --black:#000;
+    --white:#fff;
+    --facebook:#4267B2;
+    --google:#DB4437;
+    --box-shade:0 .5rem .3rem rgba(0,0,0,0.2);
+}
+.main {
+    margin:0 auto;
+}
+.main-top{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgb(233, 233, 240);
+    display: flex;
+    justify-content: center; /* محور افقی */
+    align-items: center; /* محور عمودی */
+    display: flex;
+  justify-content: space-between;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.2), /* سایه اصلی */
+    0 6px 6px rgba(0, 0, 0, 0.15); 
+  
+    
+}
+.search-container {
+   display: flex;
+    align-items: center;
+    width: 450px; /* عرض باکس جستجو */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    border: none;
+    box-shadow: var(--box-shade);
+  
+}
+
+.search-box {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.search-button {
+    background-color: #007bff; /* رنگ پس‌زمینه دکمه */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #020202;
+    font-size: 16px;
+    background: white;
+}
+
+.search-button:hover {
+    color: #0056b3; /* تغییر رنگ هنگام هاور */
+}
+.image img{
+   border-radius: 50%;
+   box-shadow: 
+   0 10px 20px rgba(0, 0, 0, 0.2), /* سایه اصلی */
+   0 6px 6px rgba(0, 0, 0, 0.15),  /* سایه دوم برای عمق بیشتر */
+   0 0 0 5px rgba(255, 255, 255, 0.5); /* حاشیه نورانی */
+ transition: box-shadow 0.3s ease;    
+}
+.image img:hover {
+    box-shadow: 
+      0 15px 30px rgba(0, 0, 0, 0.3), /* سایه بزرگ‌تر در هاور */
+      0 10px 10px rgba(0, 0, 0, 0.2), /* سایه دوم در هاور */
+      0 0 0 8px rgba(255, 255, 255, 0.7); /* حاشیه نورانی بزرگ‌تر */
+  }
+  .right{
+    float: right;
+  }
+  .left{
+    float: left;
+  }
+  .icon i{
+    padding: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease-out;
+  }
+  .icon i:hover{
+    background-color: #b1dcf8; /* تغییر رنگ در هاور */
+  transform: scale(1.1);
+  border-radius: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+  }
+ .vahid{
+  width: 100%;
+  height: 100%;
+  background: var(--rgb);
+ }
+  .right{
+    display: right;
+  }
+  .left {
+    display: left;
+  }
+  .right ul li {
+    display:inline;
+  }
+  .right ul li a{
+    padding: 40px 20px;
+    display: inline-block;
+    font-family: sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   color: #4d4646;
+   font-size: 20px;
+   list-style: none;
+  }
+  .right ul li a:hover{
+    transition: color 0.3s ease;
+    color: var(--facebook);
+    
+  }
+  .left{
+    padding: 40px 20px;
+    display: inline-block;
+    font-family: sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   color: #4d4646;
+   font-size: 20px;
+   cursor: pointer;
+  }
+  .container {
+    width:100%;
+    height: 100%;
+    background: url('./5.jpg');
+    background-position: center;
+  background-size: cover;
+  margin-top:102px;
+  position: relative;
+ 
+  }
+  .content{
+   padding: 10rem;
+   position: relative;
+
+
+  }
+  .content h2{
+    font-size: 5rem;
+    color:red;
+    text-align: center;
+    line-height: 7rem;
+    transition: color 0.3s ease, font-size 0.5s linear;
+  }
+    .content h2:hover {
+    color: rgb(26, 236, 43);
+    font-size: 8rem;
+  }
+  @keyframes scatter {
+    0% { transform: translateX(0) translateY(0); }
+    100% { transform: translateX(200px) translateY(-100px); }
+  }
+  
+  .content h2:hover {
+    animation: scatter 1s ease-in-out forwards;
+  }
